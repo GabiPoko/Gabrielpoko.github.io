@@ -43,15 +43,15 @@
 #   return fibo_list
 
 #--------------------------------------------------------------------------
-def fibonacci(n):
- x = [0,1]
- if n<=0:
-   return[]
-elif n==1:
-return[0]
-elif n==2:
-return[0,1]
-else:
-for i in range(n-2):
-x.append(x[-1]+x[-2])
-return x
+# def fibonacci(n):
+#  x = [0,1]
+#  if n<=0:
+#    return[]
+# elif n==1:
+# return[0]
+# elif n==2:
+# return[0,1]
+# else:
+# for i in range(n-2):
+# x.append(x[-1]+x[-2])
+# return x
