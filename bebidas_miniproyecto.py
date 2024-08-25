@@ -11,15 +11,18 @@ class BebidasMenu:
         self.ingredientes = ingredientes
 
     def mostrar_bebida(self):
+        print (f'*' * 5, self.bebida.upper(),'*'* 5)
         print (f' {self.bebida}: {self.precio}\n Ingredientes: {self.ingredientes}')
 
 campari = BebidasMenu('Campari', 3500, 'Naranja, aguardiente y jarabe azucarado')
-# campari.mostrar_bebida()
+martini = BebidasMenu('Martini', 3000, 'ginebra y vermú')
+manhattan = BebidasMenu('Manhattan', 4000, 'Whisky con martini rojo')
+limonada = BebidasMenu('Limonada', 2500, 'Limon, azucar y agua')
+Licuado = BebidasMenu('Licuado', 3000, 'Zumo de Fruta y agua')
+Mojito = BebidasMenu ('Mojito', 2000, 'Lima, menta y azucar')
 
-class BebidasSinAlcohol (BebidasMenu):
 
- limonada = BebidasMenu('Limonada', 2000, 'Limón, azucar, agua')
-
- limonada.mostrar_bebida()
+limonada.mostrar_bebida()
+Mojito.mostrar_bebida()
 
     
