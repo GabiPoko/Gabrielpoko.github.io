@@ -18,11 +18,10 @@ campari = BebidasMenu('Campari', 3500, 'Naranja, aguardiente y jarabe azucarado'
 martini = BebidasMenu('Martini', 3000, 'ginebra y vermú')
 manhattan = BebidasMenu('Manhattan', 4000, 'Whisky con martini rojo')
 limonada = BebidasMenu('Limonada', 2500, 'Limon, azucar y agua')
-Licuado = BebidasMenu('Licuado', 3000, 'Zumo de Fruta y agua')
-Mojito = BebidasMenu ('Mojito', 2000, 'Lima, menta y azucar')
+licuado = BebidasMenu('Licuado', 3000, 'Zumo de Fruta y agua')
+mojito = BebidasMenu ('Mojito', 2000, 'Lima, menta y azucar')
 
+martini.mostrar_bebida()
 
-limonada.mostrar_bebida()
-Mojito.mostrar_bebida()
 
     
