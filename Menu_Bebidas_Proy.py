@@ -10,8 +10,6 @@
 import tkinter as tk
 
 
-
-
 class MenuBar:
     def __init__(self, ventana):
         
