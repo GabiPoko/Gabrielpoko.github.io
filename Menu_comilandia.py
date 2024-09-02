@@ -1,11 +1,6 @@
-
-
-
 import tkinter as tk
 from tkinter import messagebox, PhotoImage
 from Lista_menus import *
-from PIL import Image, ImageTk
-
 
 # Crea ventana login
 ventana_login = tk.Tk()
@@ -19,7 +14,7 @@ nombre = tk.Label(ventana_login, text= "Usuario",bg="lemon chiffon", font=("Aria
 nombre.pack()
 ingresa_usuario = tk.Entry(ventana_login, bg="khaki")
 ingresa_usuario.pack()
- 
+
     #crea input y clave
 clave = tk.Label(ventana_login, text= "Clave", bg="lemon chiffon", font=("Arial", 10))
 clave.pack()
@@ -58,8 +53,21 @@ def ingresar():
             ventanita.title("Entradas")
             ventanita.geometry("400x450")
             ventanita.config(bg="LightGreen")
+               # Crear una barra de menú
+            menu_bar = tk.Menu(ventanita)
+            ventanita.config(menu=menu_bar)
+
+            # Crear el menú "Opciones"
+            menu_opciones = tk.Menu(menu_bar, tearoff=0)
+            menu_bar.add_cascade(label="Opciones", menu=menu_opciones)
+            menu_opciones.add_command(label="Volver al menú", command=ventanita.destroy)
+      
             items_lista(ventanita, menu_entrada)
+          
+      
             ventanita.pack()
+
+          
 
 
         def plato():
@@ -67,6 +75,15 @@ def ingresar():
             ventanita.title("PlatoPrincipal")
             ventanita.geometry("650x400")
             ventanita.config(bg="LightGreen")
+             # Crear una barra de menú
+            menu_bar = tk.Menu(ventanita)
+            ventanita.config(menu=menu_bar)
+
+            # Crear el menú "Opciones"
+            menu_opciones = tk.Menu(menu_bar, tearoff=0)
+            menu_bar.add_cascade(label="Opciones", menu=menu_opciones)
+            menu_opciones.add_command(label="Volver al menú", command=ventanita.destroy)
+      
             items_lista(ventanita, menu_comida)
             ventanita.pack()
 
@@ -91,11 +108,21 @@ def ingresar():
             items_lista(ventanita, menu_bebida)
             ventanita.pack()
 
+
         def postre():
             ventanita = tk.Tk()
             ventanita.title("Postre")
             ventanita.geometry("350x300")
             ventanita.config(bg="LightGreen")
+             # Crear una barra de menú
+            menu_bar = tk.Menu(ventanita)
+            ventanita.config(menu=menu_bar)
+
+            # Crear el menú "Opciones"
+            menu_opciones = tk.Menu(menu_bar, tearoff=0)
+            menu_bar.add_cascade(label="Opciones", menu=menu_opciones)
+            menu_opciones.add_command(label="Volver al menú", command=ventanita.destroy)
+      
             items_lista(ventanita, menu_postre)
             ventanita.pack()
 
@@ -220,8 +247,3 @@ boton_registro = tk.Button(ventana_login, bg="lemon chiffon", text='Registrate',
 boton_registro.pack()
 
 ventana_login.mainloop()
-
-
-
-
-
